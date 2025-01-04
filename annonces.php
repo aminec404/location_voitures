@@ -36,7 +36,30 @@ try {
 <header>
     <?php include('includes/includes_header.php'); ?>
 </header>
+<aside class="barre-filtres">
+    <h3>Filtres Sélectionnés</h3>
 
+    <!-- Formulaire pour les filtres -->
+    <form action="process/process_filtrage.php" method="POST">
+        <!-- Filtre de prix -->
+        <div class="filtre">
+            <input type="checkbox" id="filtre-prix" class="toggle-filtre">
+            <label class="filtre-titre" for="filtre-prix">Prix</label>
+            <div class="filtre-contenu">
+                <label for="prix-min">De :</label>
+                <input type="number" id="prix-min" name="price_min" placeholder="Min">
+                <label for="prix-max">À :</label>
+                <input type="number" id="prix-max" name="price_max" placeholder="Max">
+                <br>
+                <label><input type="radio" name="tri" value="prix_croissant"> prix croissant</label><br>
+                <label><input type="radio" name="tri" value="prix_decroissant"> prix décroissant</label>
+            </div>
+        </div>
+
+        <!-- Bouton Appliquer les filtres -->
+        <button type="submit" class="bouton-appliquer-filtres">Appliquer</button>
+    </form>
+</aside>
 <div class="resultats-recherche">
     <h2 style="text-align:center;">Annonces Disponibles</h2>
 

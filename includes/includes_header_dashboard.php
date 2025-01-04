@@ -18,6 +18,7 @@
     <a href="/location_voitures/index.php">Accueil</a>
     <a href="/location_voitures/annonces.php">Annonces</a>
     <a href="/location_voitures/utilisateur/profile.php">Profil</a>
+    <a href="/location_voitures/utilisateur/notifications.php">Notifications</a>
     <a href="/location_voitures/logout.php">Se déconnecter</a>
 </nav>
 </header>

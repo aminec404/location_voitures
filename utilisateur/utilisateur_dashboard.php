@@ -62,17 +62,6 @@ session_start();
             <label for="heure_fin">Heure de fin</label>
             <input type="time" id="heure_fin" name="heure_fin" required>
         </div>
-
-        <!-- Filtre Trier par -->
-        <div class="filters">
-            <label for="tri">Trier par</label>
-            <select id="tri" name="tri">
-                <option value="">Aucun tri</option>
-                <option value="prix_croissant">Prix croissant</option>
-                <option value="prix_decroissant">Prix décroissant</option>
-            </select>
-        </div>
-
         <!-- Bouton de recherche -->
         <div class="submit">
             <button type="submit" name="rechercher">Rechercher</button>

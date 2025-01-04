@@ -36,7 +36,7 @@ $user = $result->fetch_assoc();
 </head>
 <body>
 <header>
-        <?php include('../includes/includes_header.php'); ?>
+        <?php include('../includes/includes_header_dashboard.php'); ?>
         <h1>Bienvenue, <?php echo htmlspecialchars($user['prenom']); ?> !</h1>
     </header>
     <main>

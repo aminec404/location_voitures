@@ -32,13 +32,14 @@ $role = $_SESSION['role'] ?? null; // Null si non connecté
                 <!-- Menu pour l'administrateur -->
                 <a href="/location_voitures/index.php">Accueil</a>
                 <a href="/location_voitures/annonces.php">Gérer Annonces</a>
-                <a href="/location_voitures/administrateur/tableau_de_bord.php">Tableau de bord</a>
+                <a href="/location_voitures/administrateur/dashboard_admin.php">Tableau de bord</a>
                 <a href="/location_voitures/logout.php">Se déconnecter</a>
             <?php elseif ($role === 'client'): ?>
                 <!-- Menu pour le client -->
                 <a href="/location_voitures/index.php">Accueil</a>
                 <a href="/location_voitures/annonces.php">Annonces</a>
                 <a href="/location_voitures/utilisateur/profile.php">Profil</a>
+                <a href="/location_voitures/utilisateur/notifications.php">Notifications</a>
                 <a href="/location_voitures/logout.php">Se déconnecter</a>
             <?php else: ?>
                 <!-- Menu pour les utilisateurs non connectés -->
@@ -57,7 +58,6 @@ $role = $_SESSION['role'] ?? null; // Null si non connecté
                 <strong>
                     <?php echo htmlspecialchars($_SESSION['prenom']) . " " . htmlspecialchars($_SESSION['nom']); ?>
                 </strong>
-                (<?php echo htmlspecialchars($role); ?>)
             </p>
         <?php else: ?>
             <p>Vous n'êtes pas connecté</p>

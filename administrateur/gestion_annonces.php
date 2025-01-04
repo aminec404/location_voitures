@@ -20,6 +20,10 @@ $result = $conn->query($sql_annonces);
     <link rel="stylesheet" href="../style.css"> 
 </head>
 <body>
+     <!-- Image principale -->
+    <div class="image-container">
+        <img src="/location_voitures/images/renault-stock-home.webp" alt="Renault Stock" class="image_voiture">
+    </div>
     <h2>Gestion des annonces en attente</h2>
 
     <!-- Affichage des annonces -->
