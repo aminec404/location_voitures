@@ -27,6 +27,13 @@ session_start();
         <p>Vous n'êtes pas connecté</p>
     <?php endif; ?>
 </div>
+
+<!-- Bannière principale -->
+<div class="hero-banner">
+        <h1>Bienvenue sur L☆CAR</h1>
+        <p>Réservez la voiture parfaite pour votre voyage en toute simplicité.</p>    
+</div>    
+    
 <!-- Barre de réservation -->
 <div class="reservation-bar">
     <form action="process/process_recherche.php" method="POST">
